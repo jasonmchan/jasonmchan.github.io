@@ -1,0 +1,27 @@
+baseURL = "https://jasonmchan.github.io/"
+languageCode = "en-us"
+title = "Jason Chan"
+googleAnalytics = "G-2ECCV1XQWQ"
+
+theme = "jchan"
+
+[author]
+name = "Jason Chan"
+description = """\
+Hello! I'm Jason. I'm a third-year undergraduate at UC Berkeley studying computer science. My interests lie in distributed systems and databases.
+
+Currently, I'm researching distributed transactions at [SkyLab](https://sky.cs.berkeley.edu/)---check out our work on [TAOBench](https://www.vldb.org/pvldb/vol15/p1965-cheng.pdf), a social network benchmark based on Meta's TAO. I am a teaching assistant for [CS186 (Database Systems)](https://cs186berkeley.net).
+
+Previously, I worked at [Cockroach Labs](https://www.cockroachlabs.com), where I contributed to [CockroachDB](https://github.com/cockroachdb/cockroach), and before that I was at Amazon.
+"""
+
+[params]
+globalFontFamily = "sans-serif"
+timeformat = "Jan 2, 2006"
+
+[[params.social]]
+name = "github"  
+url = "https://github.com/jasonmchan"
+[[params.social]]
+name = "linkedin"
+url = "https://linkedin.com/in/jason-m-chan"

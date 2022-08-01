@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <main>
+    <h2 class="mt-8 mb-1">{{ .Site.Author.name }}</h2>
+    <div class="my-3 home-intro">
+      <p>{{ .Site.Author.description | markdownify | safeHTML }}</p>
+    </div>
+  {{ if .Site.RegularPages }}
+  <h3 class="my-6">Posts</h3>
+    <div>
+      {{ $paginator := .Paginate (where .Site.RegularPages "Kind" "page") }}
+      {{ range $paginator.Pages }}
+      {{ partial "list.html" . }}
+      {{ end }}
+    </div>
+  </main>
+  {{ end }}
+{{ end }}

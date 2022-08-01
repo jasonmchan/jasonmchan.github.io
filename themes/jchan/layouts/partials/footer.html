@@ -1,0 +1,13 @@
+<footer class="mt-8 flex sm:flex-col-reverse justify-between items-center">
+  <p class="flex items-center mt-0">
+    {{ range $_, $key := .Site.Params.Social }}
+      <a class="icon mx-2" href="{{ $key.url }}" title="{{ $key.name }}">
+      {{ if $key.svg }}
+        {{ $key.svg | safeHTML }}
+      {{ else }}
+        {{ index $.Site.Data.svg $key.name | safeHTML }}
+      {{ end }}
+      </a>
+    {{ end }}
+  </p>
+</footer>
