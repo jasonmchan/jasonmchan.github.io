@@ -1,0 +1,1 @@
+(()=>{document.querySelectorAll(".md ul").forEach(e=>{/<li><input .+>.+<\/li>/.test(e.innerHTML)&&e.classList.add("ul-checkbox")});document.querySelector("body").style.setProperty("--global-font-family","");var t="<no value>";t==="false"&&(document.documentElement.style="user-select:none");})();
